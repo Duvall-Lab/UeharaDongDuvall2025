@@ -16,3 +16,4 @@ All software can be installed by `conta install`. Building virtual environment l
 6. `cat` Orthogroups.tsv | `grep -f` Orthogroups_SingleCopyOrthologues.txt > OG_SingleCopy.tsv
 7. `cd` ~/OrthoFinder/Results_Date/Single_Copy_Orthologue_Sequences/
 8. run `python ./util/change_OTU.py OG_SingleCopy.tsv OG000XXXX.alined.trimmed.fa` -- you can use for loop
+9. To run iqtree for constructing phylogenetic tree, make nexus file first. If you have OG list, you can use ./util/generate_nexus.py
