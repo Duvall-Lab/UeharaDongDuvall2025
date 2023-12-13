@@ -1,4 +1,4 @@
-# Add protocol for CAFE and folloing analysis here.
+# Protocol for CAFE and downstream analysis.
 ## Construnting ML-phylogenetic tree
 1. Collect protein sequences of species you are interested in.
 2. Run orthofinder (version 2.5.5)
