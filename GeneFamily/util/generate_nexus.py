@@ -8,7 +8,7 @@ def create_nexus_file(og_ids):
 
     for og_id in og_ids:
         og_id = og_id.strip()  # Remove any trailing newline characters
-        charset_line = f"    charset part{part_number} = {og_id}.aligned.trimed.fa;\n"
+        charset_line = f"    charset part{part_number} = {og_id}.aligned.trimed_Modified.fa;\n"
         nexus_content += charset_line
         part_number += 1
 
