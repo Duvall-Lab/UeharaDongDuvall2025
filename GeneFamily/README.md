@@ -7,4 +7,4 @@
 5. `cd` ~/OrthoFinder/Results_Date/OrthoGroups/
 6. `cat` Orthogroups.tsv | `grep -f` Orthogroups_SingleCopyOrthologues.txt > OG_SingleCopy.tsv
 7. `cd` ~/OrthoFinder/Results_Date/Single_Copy_Orthologue_Sequences/
-8. run `python change_OTU.py OG_SingleCopy.tsv OG000XXXX.alined.trimmed.fa` -- you can use for loop
+8. run `python ./util/change_OTU.py OG_SingleCopy.tsv OG000XXXX.alined.trimmed.fa` -- you can use for loop
