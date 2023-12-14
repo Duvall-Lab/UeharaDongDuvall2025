@@ -5,6 +5,7 @@
 - trimal v1.4.rev15
 - iqtree v2.2.6
 - r8s v1.81
+- BEAST2 V2.7.6
 
 All software can be installed by `conta install`. Building virtual environment like `conda create -n cafe` is recommended.
 
