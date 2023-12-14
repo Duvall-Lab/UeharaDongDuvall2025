@@ -18,3 +18,8 @@ All software can be installed by `conta install`. Building virtual environment l
 7. `cd` ~/OrthoFinder/Results_Date/Single_Copy_Orthologue_Sequences/
 8. run `python ./util/change_OTU.py OG_SingleCopy.tsv OG000XXXX.alined.trimmed.fa` -- you can use for loop
 9. To run iqtree for constructing phylogenetic tree, make nexus file first. If you have OG list, you can use ./util/generate_nexus.py
+10. Then you can get
+
+## Convert ML-phylogeny to divergence time considered phylogeny
+1. Get python scripts here for preparing r8s: https://github.com/hahnlab/cafe_tutorial/tree/6b407cabda460224e70e12e66f7144cef0f4d97c/python_scripts
+2. 
