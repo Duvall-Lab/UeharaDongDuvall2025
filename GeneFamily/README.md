@@ -22,5 +22,8 @@ All software can be installed by `conta install`. Building virtual environment l
 10. Then you can get
 
 ## Convert ML-phylogeny to divergence time considered phylogeny
-1. Get python scripts here for preparing r8s: https://github.com/hahnlab/cafe_tutorial/tree/6b407cabda460224e70e12e66f7144cef0f4d97c/python_scripts
-2. Open BEAUTi and load alined sequence file
+1. Get python scripts here for preparing r8s: https://github.com/hahnlab/cafe_tutorial/tree/6b407cabda460224e70e12e66f7144cef0f4d97c/python_scripts/cafetutorial_prep_r8s.py
+2. run as follows:
+```
+r8s -b -f r8s_ctl_file.txt > r8s.tmp
+tail -n 1 r8s.tmp | cut -c 16- > aedes_spp_r8s_ultrametric.txt
