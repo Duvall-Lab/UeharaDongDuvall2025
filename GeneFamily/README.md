@@ -27,3 +27,4 @@ All software can be installed by `conta install`. Building virtual environment l
 ```
 r8s -b -f r8s_ctl_file.txt > r8s.tmp
 tail -n 1 r8s.tmp | cut -c 16- > aedes_spp_r8s_ultrametric.txt
+```
