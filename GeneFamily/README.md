@@ -28,3 +28,9 @@ All software can be installed by `conta install`. Building virtual environment l
 r8s -b -f r8s_ctl_file.txt > r8s.tmp
 tail -n 1 r8s.tmp | cut -c 16- > aedes_spp_r8s_ultrametric.txt
 ```
+
+## Run CAFE5
+1. `./CAFE5/bin/cafe5 -i Orthogroups.GeneCount2.tsv -t aedes_spp_r8s_ultrametric3.txt`
+
+### Processing for large fulctuation gene family
+`python cafetutorial_clade_and_size_filter.py -i Orthogroups.GeneCount2.tsv -o filtered_cafe_input.txt -s`
