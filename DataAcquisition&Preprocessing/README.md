@@ -1,6 +1,10 @@
 temporal description
 
 ## Crop video
+### Create id file
+`cd [video directory]`
+`ls | grep -v 'metadata' | sed s/.avi//g | grep '-0' > id`
+
 ### Convert AVI to MP4
 `for i in `cat id`; do ffmpeg -i ${i}.avi -vcodec libx264 -pix_fmt yuv420p 24_${i}.mp4; done`
 
