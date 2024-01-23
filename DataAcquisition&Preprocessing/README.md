@@ -3,6 +3,7 @@ temporal description
 ## Crop video
 ### Create id file
 `cd [video directory]`
+
 `ls | grep -v 'metadata' | sed s/.avi//g | grep '-0' > id`
 
 ### Convert AVI to MP4
