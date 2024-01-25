@@ -10,7 +10,12 @@ temporal description
 `for i in `cat id`; do ffmpeg -i ${i}.avi -vcodec libx264 -pix_fmt yuv420p 24_${i}.mp4; done`
 
 ### Check crop window
-`ffplay -i input.mp4 -vf "crop=350:350:750:415"`
+1. `ffplay -i input.mp4 -vf "crop=350:350:750:415"`
+1. `ffplay -i input.mp4 -vf "crop=350:350:370:415"`
+1. `ffplay -i input.mp4 -vf "crop=350:350:750:415"`
+1. `ffplay -i input.mp4 -vf "crop=350:350:0:35"`
+1. `ffplay -i input.mp4 -vf "crop=350:350:370:35"`
+1. `ffplay -i input.mp4 -vf "crop=350:350:750:35"`
 
 ### Crop each well position
 ```
