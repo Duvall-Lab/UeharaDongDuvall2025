@@ -17,7 +17,7 @@ temporal description
 
 ### Check crop window
 
-1. `ffplay -i input.mp4 -vf "crop=350:350:750:415"`
+1. `ffplay -i input.mp4 -vf "crop=350:350:0:415"`
 1. `ffplay -i input.mp4 -vf "crop=350:350:370:415"`
 1. `ffplay -i input.mp4 -vf "crop=350:350:750:415"`
 1. `ffplay -i input.mp4 -vf "crop=350:350:0:35"`
@@ -25,22 +25,4 @@ temporal description
 1. `ffplay -i input.mp4 -vf "crop=350:350:750:35"`
 
 ### Crop each well position
-```
-#!/bin/bash
-
-for i in `cat id`
-
-do
-videoID="${i}"
-mkdir "cropped_vid" #"$videoID"
-data_dir="cropped_vid" #`pwd`"/$videoID"
-
-ffmpeg -i ${videoID}.mp4 -vf "crop=350:350:0:415" -c:a copy ${data_dir}/${videoID}_1.mp4
-ffmpeg -i ${videoID}.mp4 -vf "crop=350:350:370:415" -c:a copy ${data_dir}/${videoID}_2.mp4
-ffmpeg -i ${videoID}.mp4 -vf "crop=350:350:750:415" -c:a copy ${data_dir}/${videoID}_3.mp4
-ffmpeg -i ${videoID}.mp4 -vf "crop=350:350:0:35" -c:a copy ${data_dir}/${videoID}_4.mp4
-ffmpeg -i ${videoID}.mp4 -vf "crop=350:350:370:35" -c:a copy ${data_dir}/${videoID}_5.mp4
-ffmpeg -i ${videoID}.mp4 -vf "crop=350:350:750:35" -c:a copy ${data_dir}/${videoID}_6.mp4
-
-done
-```
+run `sh crop_loop.sh`
