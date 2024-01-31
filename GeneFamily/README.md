@@ -11,7 +11,7 @@ All software can be installed by `conta install`. Building virtual environment l
 
 ## Construnting ML-phylogenetic tree
 1. Collect protein sequences of species you are interested in.
-2. Run orthofinder (version 2.5.5)
+2. Run orthofinder (version 2.5.5) `orthofinder -f /path/to/protein_directory/`
 3. `mv` ~/OrthoFinder/Results_Date/Single_Copy_Orthologue_Sequences/
 4. run `sh ./util/align_trim.sh`
 5. `cd` ~/OrthoFinder/Results_Date/OrthoGroups/
