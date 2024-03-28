@@ -5,7 +5,6 @@
 - trimal v1.4.rev15
 - iqtree v2.2.6
 - r8s v1.81
-- BEAST2 V2.7.6
 
 All software can be installed by `conta install`. Building virtual environment like `conda create -n cafe` is recommended.
 
@@ -15,11 +14,12 @@ All software can be installed by `conta install`. Building virtual environment l
 3. `mv` ~/OrthoFinder/Results_Date/Single_Copy_Orthologue_Sequences/
 4. run `sh ./util/align_trim.sh`
 5. `cd` ~/OrthoFinder/Results_Date/OrthoGroups/
-6. `cat` Orthogroups.tsv | `grep -f` Orthogroups_SingleCopyOrthologues.txt > OG_SingleCopy.tsv
-7. `cd` ~/OrthoFinder/Results_Date/Single_Copy_Orthologue_Sequences/
-8. run `python ./util/change_OTU.py OG_SingleCopy.tsv OG000XXXX.alined.trimmed.fa` -- you can use for loop
-9. To run iqtree for constructing phylogenetic tree, make nexus file first. If you have OG list, you can use ./util/generate_nexus.py
-10. Then you can get newwick format ML-phylogenetic tree
+6. `cat` Orthogroups.tsv | `grep -I 0.8 -f` Orthogroups_SingleCopyOrthologues.txt > OG_SingleCopy.tsv
+7. add species names to the first row of OG_SingleCopy.tsv
+8. `cd` ~/OrthoFinder/Results_Date/Single_Copy_Orthologue_Sequences/
+9. run `python ./util/change_OTU.py OG_SingleCopy.tsv OG000XXXX.alined.trimmed.fa` -- you can use for loop
+10. To run iqtree for constructing phylogenetic tree, make nexus file first. If you have OG list, you can use ./util/generate_nexus.py
+11. Then you can get newwick format ML-phylogenetic tree
 
 ## Convert ML-phylogeny to divergence time considered phylogeny
 1. Get python scripts here for preparing r8s: https://github.com/hahnlab/cafe_tutorial/tree/6b407cabda460224e70e12e66f7144cef0f4d97c/python_scripts/cafetutorial_prep_r8s.py
