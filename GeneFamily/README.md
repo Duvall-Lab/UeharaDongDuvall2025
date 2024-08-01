@@ -34,4 +34,5 @@ tail -n 1 r8s.tmp | cut -c 16- > aedes_spp_r8s_ultrametric.txt
 1. `/CAFE5/bin/cafe5 -i Orthogroups.GeneCount2.1.tsv -t aedes_spp_r8s_ultrametric2.txt -p -o ./results2`
 
 ### Processing for large fulctuation gene family
-`python cafetutorial_clade_and_size_filter.py -i Orthogroups.GeneCount2.tsv -o filtered_cafe_input.txt -s`
+`python cafetutorial_clade_and_size_filter.py -i Orthogroups.GeneCount2.2_utf8.tsv -o filtered.tsv -s 2> f
+iltered.log`
