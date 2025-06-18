@@ -1,15 +1,15 @@
 ## Data acquisition
-### Equipments
+### Equipment
 - 6-well tissue culture plates (Celltreat Scientific Products)
 - 3D-printed lids (adapter_v5.stl)
 - Odor delivery box (odor-delivery-box.dxf)
 
 
 ### Recording setting
-- Machine vision camera (a2A1920-160umBAS, Basler AG, Germany)
-- Arducam 8-50mm C-Mount Zoom Lens
-- frame rate: 60 fps
-- exposure: 17000
+- Camera: Machine vision camera (a2A1920-160umBAS, Basler AG, Germany)
+- Lens: Arducam 8-50mm C-Mount Zoom Lens
+- Frame rate: 60 fps
+- Exposure time: 17000
 
 
 ## Crop video
