@@ -2,7 +2,7 @@
 ### Equipments
 - 6-well tissue culture plates (Celltreat Scientific Products)
 - 3D-printed lids (adapter_v5.stl)
-- 
+- Odor delivery box
 
 
 ### Recording setting
@@ -10,6 +10,7 @@
 - Arducam 8-50mm C-Mount Zoom Lens
 - frame rate: 60 fps
 - exposure: 17000
+
 
 ## Crop video
 ### Create id file
