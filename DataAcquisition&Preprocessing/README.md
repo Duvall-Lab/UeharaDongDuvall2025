@@ -1,12 +1,17 @@
-temporal description
+## Data acquisition
+### Equipments
+- 6-well tissue culture plates (Celltreat Scientific Products)
+- 3D-printed lids
+- 
 
-## Crop video
-### Equipments and setting
-- Basler
+
+### Recording setting
+- Machine vision camera (a2A1920-160umBAS, Basler AG, Germany)
 - Arducam 8-50mm C-Mount Zoom Lens
 - frame rate: 60 fps
 - exposure: 17000
 
+## Crop video
 ### Create id file
 `cd [video directory]`
 `ls | grep -v 'metadata' | sed s/.avi//g | grep '-0' > id`
