@@ -17,8 +17,7 @@
 `cd [video directory]`
 `ls | grep -v 'metadata' | sed s/.avi//g | grep '-0' > id`
 
-### Convert AVI to MP4
-[In our environment, video is recorded as avi format and is large size. Format conversion is need.]
+### Convert AVI to MP4 (for reducing data size)
 `for i in `cat id`; do ffmpeg -i ${i}.avi -vcodec libx264 -pix_fmt yuv420p 24_${i}.mp4; done`
 
 ### Check crop window
