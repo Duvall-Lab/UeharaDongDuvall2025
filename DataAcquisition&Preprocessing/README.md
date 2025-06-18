@@ -30,4 +30,4 @@
 1. `ffplay -i input.mp4 -vf "crop=350:350:750:35"`
 
 ### Crop each well position
-run `sh crop_loop.sh`
+run `sh crop.sh`
