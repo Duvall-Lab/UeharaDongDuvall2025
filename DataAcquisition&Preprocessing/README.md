@@ -1,7 +1,7 @@
 ## Data acquisition
 ### Equipments
 - 6-well tissue culture plates (Celltreat Scientific Products)
-- 3D-printed lids
+- 3D-printed lids (adapter_v5.stl)
 - 
 
 
