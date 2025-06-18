@@ -2,7 +2,7 @@
 ### Equipments
 - 6-well tissue culture plates (Celltreat Scientific Products)
 - 3D-printed lids (adapter_v5.stl)
-- Odor delivery box
+- Odor delivery box (odor-delivery-box.dxf)
 
 
 ### Recording setting
